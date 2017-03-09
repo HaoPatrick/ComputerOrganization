@@ -1,7 +1,7 @@
 verilog work "MUX8T1_8.v"
 verilog work "MUX8T1_32.v"
 verilog work "SSeg7_Dev.v"
-verilog work "SPIO.v"
+verilog work "ShiftReg.v"
 verilog work "SEnter_2_32.v"
 verilog work "SAnti_jitter.v"
 verilog work "Multi_8CH32.v"

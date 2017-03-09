@@ -50,7 +50,7 @@ wire rst;
 assign RDY=Key_ready;
 assign CR=CR;
 assign buzzer=1;
-
+wire [7:0]point_out;
 SAnti_jitter U9(
 	.RSTN(RSTN),
 	.clk(clk_100mhz),
@@ -66,6 +66,11 @@ SAnti_jitter U9(
 	.rst(rst),
 	.BTN_OK(BTN_OK)
 	);
+
+reg [31:0]clkdiv;
+always@(posedge clk_100mhz) begin
+	clkdiv <= clkdiv + 1'b1;
+end
 
 wire [31:0] Div;
 wire Clk_CPU;
@@ -92,7 +97,7 @@ SEnter_2_32 M4(.clk(clk_100mhz),
 	);
 
 wire [31:0]Disp_num;
-
+wire [7:0]LE_out;
 SSeg7_Dev U6(
 	.clk(clk_100mhz),
 	.rst(rst),
@@ -109,6 +114,8 @@ SSeg7_Dev U6(
 );
 
 wire [31:0]ram_data;
+wire [31:0]disp6;
+
 Multi_8CH32 U5(
 	.clk(clk_100mhz),
 	.rst(rst),
@@ -122,7 +129,7 @@ Multi_8CH32 U5(
 	.data3(1'b1),
 	.data4(1'b1),
 	.data5(1'b1),
-	.data6(ROM_D),
+	.data6(disp6),
 	.data7(ram_data),
 	.Disp_num(Disp_num),
 	.point_out(point_out),
@@ -130,32 +137,36 @@ Multi_8CH32 U5(
 );
 
 wire [31:0]foobar;
-SPIO U7(
-	.clk(clk_100mhz),
-	.rst(rst),
-	.EN(EN),
-	.Start(Div[20]),
-	.P_Data(31'b1),
-	.counter_set(foobar),
-	.LED_out(foobar),
-	.GPIOf0(foobar),
-	.led_clk(led_clk),
-	.led_sout(led_sout),
-	.LED_PEN(LED_PEN),
-	.led_clrn(led_clrn)
-);
+//SPIO U7(
+//	.clk(clk_100mhz),
+//	.rst(rst),
+//	.EN(EN),
+//	.Start(Div[20]),
+//	.P_Data(31'b1),
+//	.counter_set(foobar),
+//	.LED_out(foobar),
+//	.GPIOf0(foobar),
+//	.led_clk(led_clk),
+//	.led_sout(led_sout),
+//	.LED_PEN(LED_PEN),
+//	.led_clrn(led_clrn)
+//);
 
-wire [31:0]disp6;
+wire [15:0] ledData;
+assign ledData = SW_OK;
+ShiftReg #(.WIDTH(16)) ledDevice (.clk(clkdiv[3]), .pdata(~ledData), .sout({led_clk,led_sout,LED_PEN,led_clrn}));
+
+
 RAM_B U3(
 	.clka(~clk_100mhz),
 	.wea(SW_OK[4]),
 	.dina(disp6),
-	.addra({N0,N0,N0,N0,N0,SW[3],Div[27:24]}),
+	.addra({N0,N0,N0,N0,N0,SW_OK[3],Div[27:24]}),
 	.douta(ram_data)
 );
 
 ROM_D U2(
-	.a({5'b00000,SW[3],Div[27:24]}),
+	.a({N0,N0,N0,N0,N0,SW_OK[3],Div[27:24]}),
 	.spo(disp6)
 );
 

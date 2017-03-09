@@ -41,7 +41,7 @@ output [7:0]LE_out
 reg[31:0] disp_data = 32'hAA5555AA;
 reg[7:0] cpu_blink = 8'b11111111, cpu_point = 8'b00000000;
 
-MUX8T1_32 MUX1_DispData(.I0(Data0),
+MUX8T1_32 MUX1_DispData(.I0(disp_data),
 								.I1(data1),
 								.I2(data2),
 								.I3(data3),
