@@ -61,7 +61,7 @@ end
 
 always begin
     #10 input_switch = input_switch + 1;
-    if (input_switch == 3'b111) begin
+    if (input_switch > 3'b111) begin
         input_switch = 0;
     end
 end

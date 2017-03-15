@@ -1,4 +1,5 @@
 verilog work "SegmentDecoder.v"
+verilog work "GraphicDecoder.v"
 verilog work "ShiftReg.v"
 verilog work "Seg7Decode.v"
 verilog work "MUX8T1_8.v"
