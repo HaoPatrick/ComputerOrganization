@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Wed Mar 15 19:48:47 2017
+| Date         : Mon Mar 20 19:33:37 2017
 | Host         : HAO-THUNDER running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    13 |
-| Unused register locations in slices containing registers |    43 |
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    76 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             171 |          104 |
-| No           | No                    | Yes                    |              44 |           16 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              29 |           12 |
-| Yes          | No                    | Yes                    |               4 |            2 |
+| No           | No                    | No                     |             167 |          102 |
+| No           | No                    | Yes                    |              78 |           37 |
+| No           | Yes                   | No                     |               2 |            2 |
+| Yes          | No                    | No                     |              80 |           53 |
+| Yes          | No                    | Yes                    |            1048 |          486 |
 | Yes          | Yes                   | No                     |              29 |            9 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,36 +45,43 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+----------------------------------------+----------------------------------+------------------+----------------+
-|        Clock Signal        |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------------------+----------------------------------------+----------------------------------+------------------+----------------+
-|  n_0_0_BUFG                |                                        |                                  |                2 |              2 |
-|  n_0_0_BUFG                |                                        | U9/rst                           |                3 |              4 |
-|  n_0_0_BUFG                | U7/P2S_led/_n0075_inv                  | U9/rst                           |                2 |              4 |
-|  U9/clk1_BUFG              |                                        |                                  |                3 |              5 |
-|  U9/clk1_BUFG              | U9/_n0225_inv1_cepot                   |                                  |                5 |              6 |
-|  clk_100mhz_IBUF_BUFG      | U9/_n0243_inv1_cepot_cepot             |                                  |                3 |              7 |
-|  clk_100mhz_IBUF_BUFG      | U9/counter1[31]_GND_1_o_LessThan_102_o | U9/RSTN_temp_sw_temp[15]_OR_54_o |                3 |              8 |
-|  clkdiv_reg_BUFG[3]        |                                        | U9/rst                           |                5 |             10 |
-|  n_0_0_BUFG                | U7/P2S_led/_n0103_inv                  |                                  |                4 |             16 |
-|  U9/clk1_BUFG              | U9/counter[31]_GND_1_o_LessThan_5_o    | U9/btn_temp[3]_scan_AND_1_o      |                6 |             21 |
-|  U8/disp_data_reg[31]_BUFG |                                        | U9/rst                           |                8 |             30 |
-|  clkdiv_reg_BUFG[3]        |                                        |                                  |               51 |             66 |
-|  clk_100mhz_IBUF_BUFG      |                                        |                                  |               48 |             98 |
-+----------------------------+----------------------------------------+----------------------------------+------------------+----------------+
++----------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
+|        Clock Signal        |               Enable Signal               |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
+|  U8/disp_data_reg[31]_BUFG |                                           | U10/_n0084                       |                1 |              1 |
+|  U8/Div_BUFG[6]            |                                           | U10/_n0090                       |                1 |              1 |
+|  U8/disp_data_reg[31]_BUFG | U10/_n0102_inv                            | U9/rst                           |                1 |              2 |
+|  n_0_0_BUFG                |                                           |                                  |                1 |              2 |
+|  n_0_0_BUFG                |                                           | U9/rst                           |                1 |              4 |
+|  n_0_0_BUFG                | U7/P2S_led/_n0075_inv                     | U9/rst                           |                2 |              4 |
+|  U9/clk1_BUFG              |                                           |                                  |                3 |              5 |
+|  U9/clk1_BUFG              | U9/_n0225_inv1_cepot                      |                                  |                2 |              6 |
+|  clk_100mhz_IBUF_BUFG      | U9/counter1[31]_GND_1_o_LessThan_102_o    | U9/RSTN_temp_sw_temp[15]_OR_54_o |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG      |                                           | U9/rst                           |                7 |             10 |
+|  n_0_0_BUFG                | U7/P2S_led/_n0103_inv                     |                                  |                5 |             16 |
+|  clk_100mhz_IBUF_BUFG      | U9/_n0243_inv1_cepot_cepot                |                                  |               11 |             17 |
+| ~n_0_0_BUFG                | U4/GPIOf0000000_we                        | U9/rst                           |                5 |             18 |
+|  U9/clk1_BUFG              | U9/counter[31]_GND_1_o_LessThan_5_o       | U9/btn_temp[3]_scan_AND_1_o      |                6 |             21 |
+|  U8/disp_data_reg[31]_BUFG |                                           | U9/rst                           |               16 |             30 |
+|  U8/disp_data_reg[31]_BUFG | U10/_n0094<1>1                            | U9/rst                           |               11 |             32 |
+|  U8/Div_BUFG[6]            |                                           | U9/rst                           |               13 |             34 |
+|  n_0_0_BUFG                | U4/GPIOe0000000_we                        |                                  |               35 |             41 |
+|  clk_100mhz_IBUF_BUFG      |                                           |                                  |               98 |            160 |
+|  U8/disp_data_reg[31]_BUFG | U1/DataPath/U2/GND_20_o_GND_20_o_AND_49_o | U9/rst                           |              467 |            992 |
++----------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 2      |                     1 |
+| 1      |                     2 |
+| 2      |                     2 |
 | 4      |                     2 |
 | 5      |                     1 |
 | 6      |                     1 |
-| 7      |                     1 |
 | 8      |                     1 |
 | 10     |                     1 |
-| 16+    |                     5 |
+| 16+    |                    10 |
 +--------+-----------------------+
 
 

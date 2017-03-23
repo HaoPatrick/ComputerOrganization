@@ -64,10 +64,12 @@ set rc [catch {
   read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.ngc
   read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.ngc
   read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/SSeg7_Dev.ngc
-  add_files -quiet c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp
-  set_property netlist_only true [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp]
-  add_files -quiet c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp
-  set_property netlist_only true [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp]
+  add_files -quiet C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp
+  set_property netlist_only true [get_files C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp]
+  add_files -quiet C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp
+  set_property netlist_only true [get_files C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp]
+  read_xdc -mode out_of_context -ref RAM_B -cells U0 c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B_ooc.xdc]
   read_xdc -mode out_of_context -ref ROM_B -cells U0 c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B_ooc.xdc
   set_property processing_order EARLY [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B_ooc.xdc]
   read_xdc C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/constrs_1/new/k7.xdc

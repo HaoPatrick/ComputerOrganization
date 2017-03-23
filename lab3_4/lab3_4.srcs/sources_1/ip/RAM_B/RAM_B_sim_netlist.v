@@ -1,18 +1,18 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Wed Mar 15 16:31:11 2017
+// Date        : Mon Mar 20 18:17:51 2017
 // Host        : HAO-THUNDER running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top RAM_B -prefix
-//               RAM_B_ blk_mem_gen_0_sim_netlist.v
-// Design      : blk_mem_gen_0
+// Command     : write_verilog -force -mode funcsim
+//               C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B_sim_netlist.v
+// Design      : RAM_B
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7k160tlfbv484-2L
+// Device      : xc7k160tlfbv676-2L
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "blk_mem_gen_0,blk_mem_gen_v8_3_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_3_4,Vivado 2016.3" *) 
+(* CHECK_LICENSE_TYPE = "RAM_B,blk_mem_gen_v8_3_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_3_4,Vivado 2016.3" *) 
 (* NotValidForBitStream *)
 module RAM_B
    (clka,
@@ -93,10 +93,10 @@ module RAM_B
   (* C_HAS_SOFTECC_OUTPUT_REGS_B = "0" *) 
   (* C_INITA_VAL = "0" *) 
   (* C_INITB_VAL = "0" *) 
-  (* C_INIT_FILE = "blk_mem_gen_0.mem" *) 
-  (* C_INIT_FILE_NAME = "no_coe_file_loaded" *) 
+  (* C_INIT_FILE = "RAM_B.mem" *) 
+  (* C_INIT_FILE_NAME = "RAM_B.mif" *) 
   (* C_INTERFACE_TYPE = "0" *) 
-  (* C_LOAD_INIT_FILE = "0" *) 
+  (* C_LOAD_INIT_FILE = "1" *) 
   (* C_MEM_TYPE = "0" *) 
   (* C_MUX_PIPELINE_STAGES = "0" *) 
   (* C_PRIM_TYPE = "1" *) 
@@ -192,6 +192,7 @@ module RAM_B
         .web(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module RAM_B_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -218,6 +219,7 @@ module RAM_B_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module RAM_B_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -236,7 +238,7 @@ module RAM_B_blk_mem_gen_prim_width
   wire [31:0]douta;
   wire [0:0]wea;
 
-  RAM_B_blk_mem_gen_prim_wrapper \prim_noinit.ram 
+  RAM_B_blk_mem_gen_prim_wrapper_init \prim_init.ram 
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -244,7 +246,8 @@ module RAM_B_blk_mem_gen_prim_width
         .wea(wea));
 endmodule
 
-module RAM_B_blk_mem_gen_prim_wrapper
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module RAM_B_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
     addra,
@@ -297,12 +300,12 @@ module RAM_B_blk_mem_gen_prim_wrapper
     .INITP_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_00(256'h800000000000FFFFFFF70000000000010000003F80000000000002ABF0000000),
+    .INIT_01(256'h7777777766666666555555554444444433333333222222221111111100000000),
+    .INIT_02(256'hFFFFFFFFEEEEEEEEDDDDDDDDCCCCCCCCBBBBBBBBAAAAAAAA9999999988888888),
+    .INIT_03(256'hFFFF9DB9FFFFDF3DF7F3DFFFDFCFBFFFDFCFFCFBD7DBFDB9D7BDFBD9557EF7E0),
+    .INIT_04(256'h007E0FFFFFFF07E0D7BDFBD9D7DBFDB9D7DB9FFFDFCFBFFFDFCFFCFBFFFFBCFB),
+    .INIT_05(256'h00000000000000000000000000000000000000000800230003DEF82003BDF020),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_08(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -487,6 +490,7 @@ module RAM_B_blk_mem_gen_prim_wrapper
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module RAM_B_blk_mem_gen_top
    (douta,
     clka,
@@ -526,8 +530,8 @@ endmodule
 (* C_HAS_MEM_OUTPUT_REGS_B = "0" *) (* C_HAS_MUX_OUTPUT_REGS_A = "0" *) (* C_HAS_MUX_OUTPUT_REGS_B = "0" *) 
 (* C_HAS_REGCEA = "0" *) (* C_HAS_REGCEB = "0" *) (* C_HAS_RSTA = "0" *) 
 (* C_HAS_RSTB = "0" *) (* C_HAS_SOFTECC_INPUT_REGS_A = "0" *) (* C_HAS_SOFTECC_OUTPUT_REGS_B = "0" *) 
-(* C_INITA_VAL = "0" *) (* C_INITB_VAL = "0" *) (* C_INIT_FILE = "blk_mem_gen_0.mem" *) 
-(* C_INIT_FILE_NAME = "no_coe_file_loaded" *) (* C_INTERFACE_TYPE = "0" *) (* C_LOAD_INIT_FILE = "0" *) 
+(* C_INITA_VAL = "0" *) (* C_INITB_VAL = "0" *) (* C_INIT_FILE = "RAM_B.mem" *) 
+(* C_INIT_FILE_NAME = "RAM_B.mif" *) (* C_INTERFACE_TYPE = "0" *) (* C_LOAD_INIT_FILE = "1" *) 
 (* C_MEM_TYPE = "0" *) (* C_MUX_PIPELINE_STAGES = "0" *) (* C_PRIM_TYPE = "1" *) 
 (* C_READ_DEPTH_A = "1024" *) (* C_READ_DEPTH_B = "1024" *) (* C_READ_WIDTH_A = "32" *) 
 (* C_READ_WIDTH_B = "32" *) (* C_RSTRAM_A = "0" *) (* C_RSTRAM_B = "0" *) 
@@ -537,7 +541,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "1024" *) (* C_WRITE_DEPTH_B = "1024" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
-(* C_XDEVICEFAMILY = "kintex7l" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "kintex7l" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_4" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module RAM_B_blk_mem_gen_v8_3_4
    (clka,
     rsta,
@@ -791,6 +795,7 @@ module RAM_B_blk_mem_gen_v8_3_4
         .wea(wea));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_v8_3_4_synth" *) 
 module RAM_B_blk_mem_gen_v8_3_4_synth
    (douta,
     clka,

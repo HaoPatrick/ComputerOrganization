@@ -98,7 +98,7 @@ SEnter_2_32 M4(.clk(clk_100mhz),
 wire [31:0]Disp_num;
 wire [7:0]LE_out;
 SSeg7_Dev U6(
-	.clk(clkdiv[3]),
+	.clk(clk_100mhz),
 	.rst(rst),
 	.Start(Div[20]),
 	.SW0(SW_OK[0]),
@@ -127,7 +127,7 @@ Multi_8CH32 U5(
 	.clk(~Clk_CPU),
 	.rst(rst),
 	.EN(GPIOe0000000_we),
-	.Test(SW_OK),
+	.Test(SW_OK[7:5]),
 	.point_in({Div[31:0],Div[31:0]}),
 	.LES({64'b0}),
 	.Data0(CPU2IO),
@@ -143,12 +143,13 @@ Multi_8CH32 U5(
 	.LE_out(LE_out)
 );
 
+wire counter0_out;
 wire mem_w;
 SCPU U1(
     .clk(Clk_CPU),
     .reset(rst),
     .inst_in(inst[31:0]),
-    .INT(disp6),
+    .INT(counter0_out),
     .PC_out(PC[31:0]),
     .mem_w(mem_w),
     .Addr_out(Addr_out[31:0]),
@@ -158,7 +159,7 @@ SCPU U1(
 
 wire counter_we;
 wire [1:0]counter_set;
-wire counter0_out;
+
 wire counter1_out;
 wire counter2_out;
 Counter_x U10(
@@ -232,7 +233,7 @@ RAM_B U3(
 
 ROM_B U2(
 	.a(PC[11:2]),
-	.spo(disp6)
+	.spo(inst)
 );
 
 endmodule
