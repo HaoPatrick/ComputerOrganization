@@ -29,4 +29,17 @@ reg [31:0]wt_data;
 wire [31:0]rdata_A,rdata_B;
 regs T1(clk,rst,L_S,R_addr_A,R_addr_B,Wt_addr,wt_data,rdata_A,rdata_B);
 
+initial begin
+clk=0;
+rst=0
+end
+
+always begin
+#1 clk=~clk
+end
+
+always begin
+#100 L_S=0;
+end
+
 endmodule
