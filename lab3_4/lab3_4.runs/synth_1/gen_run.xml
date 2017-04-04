@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k160tlfbv676-2L" LaunchTime="1490009536">
+<GenRun Id="synth_1" LaunchPart="xc7k160tlfbv676-2L" LaunchTime="1491044141">
   <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="top.vds"/>
@@ -10,6 +10,40 @@
   <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Port/SCPU_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp04/ngc/Port/SCPU_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1456416000"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ngc/SCPU_ctrl.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp04/ngc/SCPU_ctrl.ngc"/>
+        <Attr Name="ImportTime" Val="1456416000"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Port/Data_path.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp04/ngc/Port/Data_path.v"/>
+        <Attr Name="ImportTime" Val="1456416000"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ngc/Data_path.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp04/ngc/Data_path.ngc"/>
+        <Attr Name="ImportTime" Val="1456416000"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/OExp02-7SEG/MUX8T1_8.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../OExp02-7SEG/MUX8T1_8.v"/>
@@ -59,14 +93,6 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/ngc/SCPU.ngc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp03/ngc/SCPU.ngc"/>
-        <Attr Name="ImportTime" Val="1456416000"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ngc/MIO_BUS.ngc">
@@ -217,6 +243,102 @@
     <File Path="d:/Onedrive/Academic/ComputerOrganization/LAB/Exp03/coe/D_mem.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/add_32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/add_32.v"/>
+        <Attr Name="ImportTime" Val="1456567458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/addc_32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/addc_32.v"/>
+        <Attr Name="ImportTime" Val="1456567458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/srl32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/srl32.v"/>
+        <Attr Name="ImportTime" Val="1456567460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/nor32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/nor32.v"/>
+        <Attr Name="ImportTime" Val="1456567459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/or32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/or32.v"/>
+        <Attr Name="ImportTime" Val="1456567460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/xor32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/xor32.v"/>
+        <Attr Name="ImportTime" Val="1456567460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/and32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/and32.v"/>
+        <Attr Name="ImportTime" Val="1456567458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Element/SignalExt_32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/Onedrive/Academic/ComputerOrganization/LAB/Exp01/Element/SignalExt_32.v"/>
+        <Attr Name="ImportTime" Val="1456567460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regs.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

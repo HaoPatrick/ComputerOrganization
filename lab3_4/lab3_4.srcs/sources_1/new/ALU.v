@@ -22,8 +22,8 @@
 
 module ALU(
 input [2:0]ALU_operation,
-input [31:0]A,
-input [31:0]B,
+input signed [31:0]A,
+input signed [31:0]B,
 output [31:0]res,
 output zero,
 output overflow
@@ -50,8 +50,11 @@ wire [32:0]adc_res;
 ADC32 X7(.A(A),.B(xxxor32),.C0(ALU_operation),.S(adc_res));
 
 wire [31:0]SLT;
-assign SLT={31'b0,adc_res[32]};
+wire temp;
+//assign temp=A[31]&~B[31];
+//assign SLT={31'b0,adc_res[31]|temp};
 
+assign SLT=A>B?31'b0:31'b1;
 wire [31:0]srl32_res;
 srl32 X8(.A(A),.B(B),.res(srl32_res));
 
@@ -68,5 +71,6 @@ MUX8T1_32 X0(
     .o(res)
 );
 
+assign overflow=(A[31]==xxxor32[31]) & (adc_res[31] != A[31]);
 assign zero=(res==0)?1:0;
 endmodule

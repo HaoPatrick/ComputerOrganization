@@ -18,11 +18,13 @@ set_property ip_output_repo c:/Users/haoxi/Documents/Coding/verilog/ComputerOrga
 set_property ip_cache_permissions {read write} [current_project]
 add_files d:/Onedrive/Academic/ComputerOrganization/LAB/Exp03/coe/I9_mem.coe
 add_files d:/Onedrive/Academic/ComputerOrganization/LAB/Exp03/coe/D_mem.coe
-add_files -quiet C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp
-set_property used_in_implementation false [get_files C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp]
-add_files -quiet C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp
-set_property used_in_implementation false [get_files C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp]
+add_files -quiet c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp
+set_property used_in_implementation false [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/RAM_B/RAM_B.dcp]
+add_files -quiet c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp
+set_property used_in_implementation false [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp]
 read_verilog -library xil_defaultlib {
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SCPU_ctrl.v
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/Data_path.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v
@@ -36,8 +38,9 @@ read_verilog -library xil_defaultlib {
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/MIO_BUS_IO.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/top.v
 }
+read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/SCPU_ctrl.ngc
+read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/Data_path.ngc
 read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/SPIO.ngc
-read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/SCPU.ngc
 read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/MIO_BUS.ngc
 read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/ngc/Counter_x.ngc
 read_edif C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.ngc

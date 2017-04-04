@@ -30,7 +30,7 @@ input wire [31:0]Data_in,
 
 output wire mem_w,
 output wire [31:0]PC_out,
-output wire [31:0]Addr_out,
+output wire [31:0]ALU_out,
 output wire [31:0]Data_out,
 output wire CPU_MIO,
 input wire INT
@@ -55,7 +55,7 @@ Data_path DataPath(.clk(clk),
     .RegWrite(RegWrite),
     .ALU_Control(ALU_Control[2:0]),
     .PC_out(PC_out),
-    .Addr_out(Addr_out),
+    .ALU_out(ALU_out),
     .Data_out(Data_out)
     );
 SCPU_ctrl Controler(

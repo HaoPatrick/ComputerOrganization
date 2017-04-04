@@ -31,8 +31,8 @@ wire overflow;
 ALU t1(alu_op,A,B,res,zero,overflow);
 
 initial begin
-A=32'hA5A5A5A5;
-B=32'h5A5A5A5A;
+A=32'h7A5A5A5A;
+B=32'hA5A5A5A5;
 alu_op=3'b000;
 #1000 $finish;
 end
@@ -40,4 +40,10 @@ end
 always begin
 #100 alu_op=alu_op+1'b1;
 end
+
+//always begin
+//#700 
+//B=32'h7A5A5A5A;
+//A=32'hA5A5A5A5;
+//end
 endmodule
