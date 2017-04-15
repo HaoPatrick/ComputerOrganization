@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Mar 27 19:49:30 2017
+# Process ID: 14916
+# Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9560 C:\Users\haoxi\Documents\Coding\verilog\ComputerOrganization\lab3_4\lab3_4.xpr
+# Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/vivado.log
+# Journal file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.xpr
+launch_simulation
+source test_regs.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_for_alu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
+launch_simulation
+source test_for_alu.tcl
+close_sim
