@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Apr 15 10:53:38 2017
+# Process ID: 13660
+# Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/single/single.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/single/single.sim/sim_1/behav/xsim.dir/test_single_add_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/single/single.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/single/single.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/single/single.sim/sim_1/behav/xsim.dir/test_single_add_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -2,12 +2,14 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sat Apr 15 09:21:30 2017
-# Process ID: 10548
+# Start of session at: Sat Apr 01 19:16:40 2017
+# Process ID: 14372
 # Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1328 C:\Users\haoxi\Documents\Coding\verilog\ComputerOrganization\lab3_4\lab3_4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14896 C:\Users\haoxi\Documents\Coding\verilog\ComputerOrganization\lab3_4\lab3_4.xpr
 # Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/vivado.log
 # Journal file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.xpr
+launch_simulation
+launch_simulation
