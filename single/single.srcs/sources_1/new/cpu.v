@@ -63,7 +63,7 @@ scpu_ctrl Controller(
 data_path Data_path(
     .clk(clk),
     .rst(reset),
-    .data_in(data_in),
+    .data_in(data_in[31:0]),
     .inst_field(inst_in[25:0]),
     .reg_dst(reg_dst),
     .alu_src_b(alu_src_b),
