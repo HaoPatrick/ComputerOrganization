@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Fri Apr 21 10:39:39 2017
-# Process ID: 12996
+# Start of session at: Sat Apr 22 09:14:02 2017
+# Process ID: 16012
 # Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/top.vds
@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160tl'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160tl'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 20404 
+INFO: Helper process launched with PID 5332 
 WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:85]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.836 ; gain = 122.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.816 ; gain = 123.250
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:22]
 INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.v:21]
@@ -50,14 +50,11 @@ INFO: [Synth 8-638] synthesizing module 'scpu_ctrl' [C:/Users/haoxi/Documents/Co
 	Parameter br_offset bound to: 2'b01 
 	Parameter br_jump bound to: 2'b10 
 	Parameter br_reg bound to: 2'b11 
-WARNING: [Synth 8-151] case item 6'b000100 is unreachable [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
-WARNING: [Synth 8-151] case item 6'b001010 is unreachable [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:63]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
+WARNING: [Synth 8-151] case item 6'b001010 is unreachable [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:54]
 WARNING: [Synth 8-3848] Net jump in module/entity scpu_ctrl does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:30]
-WARNING: [Synth 8-3848] Net cpu_mio in module/entity scpu_ctrl does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:35]
 INFO: [Synth 8-256] done synthesizing module 'scpu_ctrl' (8#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:23]
-WARNING: [Synth 8-689] width (2) of port connection 'mem2reg' does not match port width (1) of module 'scpu_ctrl' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:56]
 INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:23]
 INFO: [Synth 8-638] synthesizing module 'regs' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/regs.v:23]
 INFO: [Synth 8-256] done synthesizing module 'regs' (9#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/regs.v:23]
@@ -92,11 +89,6 @@ WARNING: [Synth 8-689] width (3) of port connection 's' does not match port widt
 WARNING: [Synth 8-350] instance 'X0' of module 'MUX16T1_32' requires 18 connections, but only 11 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:64]
 INFO: [Synth 8-256] done synthesizing module 'ALU' (20#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:23]
 INFO: [Synth 8-256] done synthesizing module 'data_path' (21#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:23]
-WARNING: [Synth 8-689] width (2) of port connection 'mem2reg' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:72]
-WARNING: [Synth 8-689] width (2) of port connection 'branch' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:74]
-WARNING: [Synth 8-689] width (32) of port connection 'pc_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:77]
-WARNING: [Synth 8-689] width (32) of port connection 'addr_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:78]
-WARNING: [Synth 8-689] width (32) of port connection 'data_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:79]
 INFO: [Synth 8-256] done synthesizing module 'SCPU' (22#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:23]
 WARNING: [Synth 8-350] instance 'U1' of module 'SCPU' requires 11 connections, but only 9 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:148]
 INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/Counter_x.v:23]
@@ -107,10 +99,10 @@ INFO: [Synth 8-256] done synthesizing module 'MIO_BUS' (24#1) [C:/Users/haoxi/Do
 INFO: [Synth 8-638] synthesizing module 'SPIO' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SPIO_IO.v:21]
 INFO: [Synth 8-256] done synthesizing module 'SPIO' (25#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SPIO_IO.v:21]
 WARNING: [Synth 8-350] instance 'U7' of module 'SPIO' requires 12 connections, but only 11 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:212]
-INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/RAM_B_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'RAM_B' (26#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/RAM_B_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'ROM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/ROM_B_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ROM_B' (27#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/ROM_B_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM_B' (26#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ROM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/realtime/ROM_B_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM_B' (27#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/realtime/ROM_B_stub.v:6]
 WARNING: [Synth 8-3848] Net N0 in module/entity top does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:134]
 WARNING: [Synth 8-3848] Net Counter_out in module/entity top does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:121]
 INFO: [Synth 8-256] done synthesizing module 'top' (28#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:22]
@@ -217,7 +209,7 @@ WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[29]
 WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[28]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.469 ; gain = 145.328
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.473 ; gain = 145.906
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -262,7 +254,7 @@ WARNING: [Synth 8-3295] tying undriven pin U5:data3[1] to constant 0 [C:/Users/h
 WARNING: [Synth 8-3295] tying undriven pin U5:data3[0] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
 WARNING: [Synth 8-3295] tying undriven pin U1:MIO_ready to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:148]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.469 ; gain = 145.328
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.473 ; gain = 145.906
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Counter_x' instantiated as 'U10' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:165]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MIO_BUS' instantiated as 'U4' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:185]
@@ -277,10 +269,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
-Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
-Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
-Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
+Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
+Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
+Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-16012-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
 Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]
 Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -290,22 +282,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 677.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 677.617 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 677.617 ; gain = 468.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tlfbv676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 677.617 ; gain = 468.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 677.617 ; gain = 468.051
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "reg_dst" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_dst" won't be mapped to RAM because it is too sparse
@@ -346,16 +338,16 @@ INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'reg_dst_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:56]
-WARNING: [Synth 8-327] inferring latch for variable 'alu_src_b_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:75]
-WARNING: [Synth 8-327] inferring latch for variable 'mem2reg_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:81]
-WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:54]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_write_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:57]
-WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_w_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_dst_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_src_b_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'mem2reg_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_write_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_w_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:84]
 WARNING: [Synth 8-327] inferring latch for variable 'o_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:44]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 677.617 ; gain = 468.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -369,21 +361,21 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 33    
+	               32 Bit    Registers := 36    
 	                8 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
 +---Muxes : 
 	  33 Input     32 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 2     
-	  13 Input      3 Bit        Muxes := 1     
-	  13 Input      2 Bit        Muxes := 5     
+	  14 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 39    
 	   3 Input      1 Bit        Muxes := 4     
-	  13 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 4     
 	  11 Input      1 Bit        Muxes := 1     
 	  10 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -406,11 +398,11 @@ Module scpu_ctrl
 Detailed RTL Component Info : 
 +---Muxes : 
 	   9 Input      3 Bit        Muxes := 2     
-	  13 Input      3 Bit        Muxes := 1     
-	  13 Input      2 Bit        Muxes := 5     
+	  14 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 4     
-	  13 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 4     
 	  11 Input      1 Bit        Muxes := 1     
 Module regs 
 Detailed RTL Component Info : 
@@ -435,10 +427,12 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 1     
 Module data_path 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	                1 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -455,7 +449,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "U1/Data_path/a0/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3917] design top has port buzzer driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_16_1/\U1/Data_path/pc_reg[1] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/mem2reg_reg )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/reg_write_reg )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/alu_src_b_reg )
@@ -471,8 +467,6 @@ INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[6]' (FDE) to 'U5/cpu_bli
 WARNING: [Synth 8-3332] Sequential element (U1/Controller/reg_dst_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Controller/alu_src_b_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Controller/mem2reg_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Controller/branch_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Controller/branch_reg[0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Controller/reg_write_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Controller/mem_w_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[31]) is unused and will be removed from module top.
@@ -541,36 +535,11 @@ WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][1]) 
 WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[28]) is unused and will be removed from module top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_out_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U1/Data_path/pc_out_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_out_reg[1]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 761.508 ; gain = 551.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -585,10 +554,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:02:14 . Memory (MB): peak = 808.844 ; gain = 599.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:14 . Memory (MB): peak = 809.828 ; gain = 600.262
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -600,7 +569,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:15 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -624,7 +593,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -637,7 +606,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -649,25 +618,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -700,43 +669,42 @@ Report Cell Usage:
 |7     |SPIO         |     1|
 |8     |SSeg7_Dev    |     1|
 |9     |BUFG         |     3|
-|10    |CARRY4       |    13|
-|11    |LUT1         |     1|
-|12    |LUT2         |    36|
-|13    |LUT3         |    18|
-|14    |LUT4         |    17|
-|15    |LUT5         |    67|
-|16    |LUT6         |   335|
-|17    |MUXF7        |   149|
-|18    |MUXF8        |    68|
-|19    |XORCY        |     1|
-|20    |FDCE         |   992|
-|21    |FDRE         |    75|
-|22    |LD           |     3|
-|23    |IBUF         |    22|
-|24    |OBUF         |    17|
+|10    |CARRY4       |    37|
+|11    |LUT1         |    32|
+|12    |LUT2         |    78|
+|13    |LUT3         |    49|
+|14    |LUT4         |    19|
+|15    |LUT5         |   212|
+|16    |LUT6         |   755|
+|17    |MUXF7        |   296|
+|18    |MUXF8        |    52|
+|19    |FDCE         |   992|
+|20    |FDRE         |   197|
+|21    |LD           |     4|
+|22    |IBUF         |    22|
+|23    |OBUF         |    17|
 +------+-------------+------+
 
 Report Instance Areas: 
 +------+---------------+------------+------+
 |      |Instance       |Module      |Cells |
 +------+---------------+------------+------+
-|1     |top            |            |  2176|
-|2     |  U1           |SCPU        |  1603|
-|3     |    Controller |scpu_ctrl   |    12|
-|4     |    Data_path  |data_path   |  1591|
-|5     |      a0       |ALU         |     6|
-|6     |        X7     |ADC32       |     1|
-|7     |      r0       |regs        |  1581|
-|8     |  U5           |Multi_8CH32 |    73|
+|1     |top            |            |  3124|
+|2     |  U1           |SCPU        |  2582|
+|3     |    Controller |scpu_ctrl   |   109|
+|4     |    Data_path  |data_path   |  2473|
+|5     |      a0       |ALU         |    17|
+|6     |        X7     |ADC32       |    12|
+|7     |      r0       |regs        |  2192|
+|8     |  U5           |Multi_8CH32 |    42|
 |9     |  U8           |clk_div     |    98|
 +------+---------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 113 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 677.742 ; gain = 106.859
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:57 ; elapsed = 00:02:03 . Memory (MB): peak = 835.672 ; gain = 264.688
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:16 . Memory (MB): peak = 835.672 ; gain = 626.105
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20160902 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -747,7 +715,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file SAnti_jitter.edif ...
-ngc2edif: Total memory usage is 89688 kilobytes
+ngc2edif: Total memory usage is 89184 kilobytes
 
 Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.ngc' for (cell view 'SAnti_jitter', library 'work')
 Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_c0a810b8.edif]
@@ -795,7 +763,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file Counter_x.edif ...
-ngc2edif: Total memory usage is 88160 kilobytes
+ngc2edif: Total memory usage is 88224 kilobytes
 
 Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/Counter_x.ngc' for (cell view 'Counter_x', library 'work')
 Parsing EDIF File [./.ngc2edfcache/Counter_x_ngc_233cfc4b.edif]
@@ -809,7 +777,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file MIO_BUS.edif ...
-ngc2edif: Total memory usage is 88032 kilobytes
+ngc2edif: Total memory usage is 88608 kilobytes
 
 Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/MIO_BUS.ngc' for (cell view 'MIO_BUS', library 'work')
 Parsing EDIF File [./.ngc2edfcache/MIO_BUS_ngc_233cfc4b.edif]
@@ -823,19 +791,19 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file SPIO.edif ...
-ngc2edif: Total memory usage is 87776 kilobytes
+ngc2edif: Total memory usage is 88160 kilobytes
 
 Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/SPIO.ngc' for (cell view 'SPIO', library 'work')
 Parsing EDIF File [./.ngc2edfcache/SPIO_ngc_233cfc4b.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/SPIO_ngc_233cfc4b.edif]
-INFO: [Netlist 29-17] Analyzing 961 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 985 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20160902
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 738 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 37 instances
+  (MUXCY,XORCY) => CARRY4: 36 instances
   AND2 => LUT2: 8 instances
   AND3 => LUT3: 88 instances
   AND4 => LUT4: 72 instances
@@ -847,15 +815,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDPE_1 => FDPE (inverted pins: C): 3 instances
   FDR => FDRE: 2 instances
   INV => LUT1: 84 instances
-  LD => LDCE: 3 instances
+  LD => LDCE: 4 instances
   OR2 => LUT2: 56 instances
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-149 Infos, 277 Warnings, 0 Critical Warnings and 0 Errors encountered.
+151 Infos, 242 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 688.527 ; gain = 444.855
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:22 . Memory (MB): peak = 846.789 ; gain = 603.105
 INFO: [Common 17-1381] The checkpoint 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 688.527 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 10:40:29 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 846.789 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 22 09:16:30 2017...

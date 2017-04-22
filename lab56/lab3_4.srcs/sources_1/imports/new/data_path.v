@@ -32,9 +32,9 @@ module data_path(
     input wire branch,
     input wire reg_write,
     input wire [2:0]alu_control,
-    output reg pc_out,
-    output reg addr_out,
-    output reg data_out
+    output reg [31:0]pc_out,
+    output reg [31:0]addr_out,
+    output reg [31:0]data_out
     );
 
 

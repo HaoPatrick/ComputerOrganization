@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Fri Apr 21 10:41:36 2017
+| Date         : Sat Apr 22 09:17:32 2017
 | Host         : HAO-THUNDER running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -54,11 +54,31 @@ Table of Contents
 --------------------
  There are 185 register/latch pins with no clock driven by root clock pin: clk_100mhz (HIGH)
 
- There are 26 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[24]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[10]/Q (HIGH)
 
- There are 26 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[2]/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[11]/Q (HIGH)
 
- There are 26 register/latch pins with no clock driven by root clock pin: U9/SW_OK_2/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[3]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[4]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[5]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[6]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[7]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[8]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: U1/Data_path/pc_out_reg[9]/Q (HIGH)
+
+ There are 146 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[24]/Q (HIGH)
+
+ There are 146 register/latch pins with no clock driven by root clock pin: U8/clkdiv_reg[2]/Q (HIGH)
+
+ There are 146 register/latch pins with no clock driven by root clock pin: U9/SW_OK_2/Q (HIGH)
 
  There are 32 register/latch pins with no clock driven by root clock pin: U9/clk1/Q (HIGH)
 
@@ -75,7 +95,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 352 pins that are not constrained for maximum delay. (HIGH)
+ There are 487 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

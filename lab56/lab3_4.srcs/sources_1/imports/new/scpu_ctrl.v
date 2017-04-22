@@ -28,7 +28,7 @@ output reg reg_dst,
 output reg alu_src_b,
 output reg mem2reg,
 output reg jump,
-output reg [1:0]branch,
+output reg branch,
 output reg reg_write,
 output reg [2:0]alu_control,
 output reg mem_w,
@@ -47,6 +47,8 @@ parameter br_pc=2'b00;
 parameter br_offset=2'b01;
 parameter br_jump=2'b10;
 parameter br_reg=2'b11;
+
+
 
 always @(*) begin
 case (opcode)
@@ -81,11 +83,13 @@ case (opcode)
     6'b100011: begin reg_dst=0;alu_src_b=1;mem2reg=1;reg_write=1;alu_control=alu_add;end // lw
     6'b101011: begin alu_src_b=1;alu_control=alu_add;mem_w=1;end // sw
     6'b000100: begin alu_control=alu_sub; branch=br_offset; end // beq
-    6'b000100: begin alu_control=alu_sub; branch=br_offset; end // bne
+    6'b000101: begin alu_control=alu_sub; branch=br_offset; end // bne
     6'b000010: begin branch=br_jump; end //j
-    6'b001010: begin reg_dst=0;end //jal
+    6'b000011: begin reg_dst=0;end //jal
     6'b010000: begin reg_dst=0;end //slti
 endcase
+
+cpu_mio=1;
 end
 
 endmodule

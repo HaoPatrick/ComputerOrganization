@@ -40,10 +40,10 @@ input wire INT
 wire zero;
 wire reg_dst;
 wire alu_src_b;
-wire [1:0]mem2reg;
+wire mem2reg;
 wire [2:0]alu_control;
 wire jump;
-wire [1:0]branch;
+wire branch;
 wire reg_write;
 
 
@@ -53,7 +53,7 @@ scpu_ctrl Controller(
     .MIO_ready(MIO_ready),
     .reg_dst(reg_dst),
     .alu_src_b(alu_src_b),
-    .mem2reg(mem2reg[1:0]),
+    .mem2reg(mem2reg),
     .jump(jump),
     .branch(branch),
     .reg_write(reg_write),
