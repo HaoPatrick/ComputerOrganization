@@ -19,11 +19,19 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module srl32(input [31:0] A,
-				 input [31:0] B,
 				 input [4:0] shfit,
 				 output [31:0] res
 				);
 	
-	assign res = A>B?A:B;	//32位数右移。SP3移1位,SWord移shfit位，需要修改逻辑符号，增加shfit端口
+	assign res = A>>shfit;	//32位数右移。SP3移1位,SWord移shfit位，需要修改逻辑符号，增加shfit端口
+
+endmodule
+
+module sll32(input [31:0] A,
+				 input [4:0] shfit,
+				 output [31:0] res
+				);
+	
+	assign res = A<<shfit;	//32位数右移。SP3移1位,SWord移shfit位，需要修改逻辑符号，增加shfit端口
 
 endmodule

@@ -30,46 +30,52 @@ input wire [31:0]Data_in,
 
 output wire mem_w,
 output wire [31:0]PC_out,
-output wire [31:0]ALU_out,
+output wire [31:0]Addr_out,
 output wire [31:0]Data_out,
 output wire CPU_MIO,
 input wire INT
     );
 
-wire RegDst;
-wire ALUSrc_B;
-wire MemtoReg;
-wire Jump;
-wire Branch;
-wire RegWrite;
-wire [2:0]ALU_Control;
-Data_path DataPath(.clk(clk),
-    .rst(reset),
-    .Data_in(Data_in[31:0]),
-    .inst_field(inst_in),
-    .RegDst(RegDst),
-    .ALUSrc_B(ALUSrc_B),
-    .MemtoReg(MemtoReg),
-    .Jump(Jump),
-    .Branch(Branch),
-    .RegWrite(RegWrite),
-    .ALU_Control(ALU_Control[2:0]),
-    .PC_out(PC_out),
-    .ALU_out(ALU_out),
-    .Data_out(Data_out)
-    );
-SCPU_ctrl Controler(
-    .OPcode(inst_in[31:26]),
-    .Fun(inst_in[5:0]),
+
+wire zero;
+wire reg_dst;
+wire alu_src_b;
+wire [1:0]mem2reg;
+wire [2:0]alu_control;
+wire jump;
+wire [1:0]branch;
+wire reg_write;
+
+
+scpu_ctrl Controller(
+    .opcode(inst_in[31:26]),
+    .func(inst_in[5:0]),
     .MIO_ready(MIO_ready),
-    .RegDst(RegDst),
-    .ALUSrc_B(ALUSrc_B),
-    .MemtoReg(MemtoReg),
-    .Jump(Jump),
-    .Branch(Branch),
-    .RegWrite(RegWrite),
-    .ALU_Control(ALU_Control[2:0]),
+    .reg_dst(reg_dst),
+    .alu_src_b(alu_src_b),
+    .mem2reg(mem2reg[1:0]),
+    .jump(jump),
+    .branch(branch),
+    .reg_write(reg_write),
+    .alu_control(alu_control[2:0]),
     .mem_w(mem_w),
-    .CPU_MIO(CPU_MIO)
-    );
+    .cpu_mio(CPU_MIO)
+);
+
+data_path Data_path(
+    .clk(clk),
+    .rst(reset),
+    .data_in(Data_in[31:0]),
+    .inst_field(inst_in[25:0]),
+    .reg_dst(reg_dst),
+    .alu_src_b(alu_src_b),
+    .mem2reg(mem2reg),
+    .jump(jump),
+    .branch(branch),
+    .reg_write(reg_write),
+    .alu_control(alu_control[2:0]),
+    .pc_out(PC_out),
+    .addr_out(Addr_out),
+    .data_out(Data_out)
+);
 endmodule

@@ -51,10 +51,19 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/OExp02-7SEG/MUX8T1_32.v">
+      <File Path="$PSRCDIR/sources_1/imports/Element/xor32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v"/>
-          <Attr Name="ImportTime" Val="1488965156"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/xor32.v"/>
+          <Attr Name="ImportTime" Val="1490252003"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Element/srl32.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v"/>
+          <Attr Name="ImportTime" Val="1490254083"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -69,19 +78,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Element/xor32.v">
+      <File Path="$PSRCDIR/sources_1/imports/Element/or32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/xor32.v"/>
-          <Attr Name="ImportTime" Val="1490252003"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Element/addc_32.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v"/>
-          <Attr Name="ImportTime" Val="1490255147"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/or32.v"/>
+          <Attr Name="ImportTime" Val="1490251704"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -96,6 +96,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/OExp02-7SEG/MUX8T1_32.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v"/>
+          <Attr Name="ImportTime" Val="1488965156"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Element/and32.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/and32.v"/>
@@ -105,19 +114,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Element/or32.v">
+      <File Path="$PSRCDIR/sources_1/imports/Element/addc_32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/or32.v"/>
-          <Attr Name="ImportTime" Val="1490251704"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Element/srl32.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v"/>
-          <Attr Name="ImportTime" Val="1490254083"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v"/>
+          <Attr Name="ImportTime" Val="1490255147"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

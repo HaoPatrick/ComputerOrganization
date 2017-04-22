@@ -2,12 +2,12 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sat Apr 01 18:55:42 2017
-# Process ID: 13672
-# Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.runs/synth_1
+# Start of session at: Fri Apr 21 10:39:39 2017
+# Process ID: 12996
+# Current directory: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.runs/synth_1/top.vds
-# Journal file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.runs/synth_1\vivado.jou
+# Log file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/top.vds
+# Journal file: C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7k160tlfbv676-2L
@@ -15,43 +15,847 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160tl'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160tl'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9516 
+INFO: Helper process launched with PID 20404 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:85]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 324.785 ; gain = 113.375
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.836 ; gain = 122.695
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/top.v:22]
-INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.v:21]
-INFO: [Synth 8-256] done synthesizing module 'SAnti_jitter' (1#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.v:21]
-INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/clk_div.v:21]
-INFO: [Synth 8-256] done synthesizing module 'clk_div' (2#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/clk_div.v:21]
-INFO: [Synth 8-638] synthesizing module 'SEnter_2_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.v:21]
-INFO: [Synth 8-256] done synthesizing module 'SEnter_2_32' (3#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.v:21]
-INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v:21]
-INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev' (4#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v:21]
-INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/Multi_8CH32.v:21]
-INFO: [Synth 8-638] synthesizing module 'MUX8T1_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:21]
-INFO: [Synth 8-256] done synthesizing module 'MUX8T1_32' (5#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:21]
-INFO: [Synth 8-638] synthesizing module 'MUX8T1_8' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v:21]
-INFO: [Synth 8-256] done synthesizing module 'MUX8T1_8' (6#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v:21]
-INFO: [Synth 8-256] done synthesizing module 'Multi_8CH32' (7#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/OExp02-7SEG/Multi_8CH32.v:21]
-INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/SCPU.v:23]
-INFO: [Synth 8-638] synthesizing module 'Data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/Data_path.v:21]
-INFO: [Synth 8-256] done synthesizing module 'Data_path' (8#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/Data_path.v:21]
-WARNING: [Synth 8-689] width (32) of port connection 'inst_field' does not match port width (26) of module 'Data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/SCPU.v:49]
-INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SCPU_ctrl.v:21]
-INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl' (9#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/imports/Port/SCPU_ctrl.v:21]
-INFO: [Synth 8-256] done synthesizing module 'SCPU' (10#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/SCPU.v:23]
-ERROR: [Synth 8-448] named port connection 'Addr_out' does not exist for instance 'U1' of module 'SCPU' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/top.v:155]
-WARNING: [Synth 8-350] instance 'U1' of module 'SCPU' requires 11 connections, but only 8 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/top.v:148]
-INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/Counter_x.v:23]
-ERROR: [Synth 8-285] failed synthesizing module 'Counter_x' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/Counter_x.v:23]
-ERROR: [Synth 8-285] failed synthesizing module 'top' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab3_4/lab3_4.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SAnti_jitter' (1#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.v:21]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/clk_div.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (2#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/clk_div.v:21]
+INFO: [Synth 8-638] synthesizing module 'SEnter_2_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SEnter_2_32' (3#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.v:21]
+INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev' (4#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/Multi_8CH32.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX8T1_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:56]
+INFO: [Synth 8-256] done synthesizing module 'MUX8T1_32' (5#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:56]
+WARNING: [Synth 8-350] instance 'MUX1_DispData' of module 'MUX8T1_32' requires 18 connections, but only 10 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/Multi_8CH32.v:44]
+INFO: [Synth 8-638] synthesizing module 'MUX8T1_8' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX8T1_8' (6#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Multi_8CH32' (7#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/Multi_8CH32.v:21]
+INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'scpu_ctrl' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:23]
+	Parameter alu_add bound to: 3'b010 
+	Parameter alu_sub bound to: 3'b110 
+	Parameter alu_and bound to: 3'b000 
+	Parameter alu_or bound to: 3'b001 
+	Parameter alu_slt bound to: 3'b111 
+	Parameter alu_nor bound to: 3'b100 
+	Parameter alu_srl bound to: 3'b101 
+	Parameter alu_xor bound to: 3'b011 
+	Parameter br_pc bound to: 2'b00 
+	Parameter br_offset bound to: 2'b01 
+	Parameter br_jump bound to: 2'b10 
+	Parameter br_reg bound to: 2'b11 
+WARNING: [Synth 8-151] case item 6'b000100 is unreachable [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
+WARNING: [Synth 8-151] case item 6'b001010 is unreachable [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:52]
+WARNING: [Synth 8-3848] Net jump in module/entity scpu_ctrl does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:30]
+WARNING: [Synth 8-3848] Net cpu_mio in module/entity scpu_ctrl does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:35]
+INFO: [Synth 8-256] done synthesizing module 'scpu_ctrl' (8#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 'mem2reg' does not match port width (1) of module 'scpu_ctrl' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:56]
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:23]
+INFO: [Synth 8-638] synthesizing module 'regs' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/regs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regs' (9#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/regs.v:23]
+INFO: [Synth 8-638] synthesizing module 'sign_ext' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/sign_ext.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sign_ext' (10#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/sign_ext.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'and32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/and32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'and32' (11#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/and32.v:21]
+INFO: [Synth 8-638] synthesizing module 'or32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/or32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'or32' (12#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/or32.v:21]
+INFO: [Synth 8-638] synthesizing module 'xor32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/xor32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'xor32' (13#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/xor32.v:21]
+INFO: [Synth 8-638] synthesizing module 'nor32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/nor32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'nor32' (14#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/nor32.v:21]
+INFO: [Synth 8-638] synthesizing module 'SignalExt_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/SignalExt_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SignalExt_32' (15#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/SignalExt_32.v:21]
+INFO: [Synth 8-638] synthesizing module 'ADC32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v:21]
+WARNING: [Synth 8-3848] Net Co in module/entity ADC32 does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v:25]
+INFO: [Synth 8-256] done synthesizing module 'ADC32' (16#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v:21]
+WARNING: [Synth 8-689] width (3) of port connection 'C0' does not match port width (1) of module 'ADC32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:50]
+WARNING: [Synth 8-350] instance 'X7' of module 'ADC32' requires 5 connections, but only 4 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:50]
+INFO: [Synth 8-638] synthesizing module 'srl32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'srl32' (17#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v:21]
+WARNING: [Synth 8-689] width (32) of port connection 'shfit' does not match port width (5) of module 'srl32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:59]
+INFO: [Synth 8-638] synthesizing module 'sll32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v:30]
+INFO: [Synth 8-256] done synthesizing module 'sll32' (18#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v:30]
+WARNING: [Synth 8-689] width (32) of port connection 'shfit' does not match port width (5) of module 'sll32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:62]
+INFO: [Synth 8-638] synthesizing module 'MUX16T1_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:43]
+INFO: [Synth 8-256] done synthesizing module 'MUX16T1_32' (19#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:21]
+WARNING: [Synth 8-689] width (3) of port connection 's' does not match port width (5) of module 'MUX16T1_32' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:65]
+WARNING: [Synth 8-350] instance 'X0' of module 'MUX16T1_32' requires 18 connections, but only 11 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:64]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (20#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (21#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 'mem2reg' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:72]
+WARNING: [Synth 8-689] width (2) of port connection 'branch' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:74]
+WARNING: [Synth 8-689] width (32) of port connection 'pc_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:77]
+WARNING: [Synth 8-689] width (32) of port connection 'addr_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:78]
+WARNING: [Synth 8-689] width (32) of port connection 'data_out' does not match port width (1) of module 'data_path' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:79]
+INFO: [Synth 8-256] done synthesizing module 'SCPU' (22#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v:23]
+WARNING: [Synth 8-350] instance 'U1' of module 'SCPU' requires 11 connections, but only 9 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:148]
+INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/Counter_x.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Counter_x' (23#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/Counter_x.v:23]
+WARNING: [Synth 8-350] instance 'U10' of module 'Counter_x' requires 12 connections, but only 11 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:165]
+INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/MIO_BUS_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MIO_BUS' (24#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/MIO_BUS_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'SPIO' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SPIO_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SPIO' (25#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SPIO_IO.v:21]
+WARNING: [Synth 8-350] instance 'U7' of module 'SPIO' requires 12 connections, but only 11 given [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:212]
+INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM_B' (26#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ROM_B' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/ROM_B_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM_B' (27#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/realtime/ROM_B_stub.v:6]
+WARNING: [Synth 8-3848] Net N0 in module/entity top does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:134]
+WARNING: [Synth 8-3848] Net Counter_out in module/entity top does not have driver. [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:121]
+INFO: [Synth 8-256] done synthesizing module 'top' (28#1) [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:22]
+WARNING: [Synth 8-3917] design top has port buzzer driven by constant 1
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[31]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[30]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[29]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[28]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[27]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[26]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[25]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[24]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[23]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[22]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[21]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[20]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[19]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[18]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[17]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[16]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[15]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[14]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[13]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[12]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[11]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[10]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[9]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[8]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[7]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[6]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[5]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[4]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[3]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[2]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[1]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I9[0]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[31]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[30]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[29]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[28]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[27]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[26]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[25]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[24]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[23]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[22]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[21]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[20]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[19]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[18]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[17]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[16]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[15]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[14]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[13]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[12]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[11]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[10]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[9]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[8]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[7]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[6]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[5]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[4]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[3]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[2]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[1]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I10[0]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[31]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[30]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[29]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[28]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[27]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[26]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[25]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[24]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[23]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[22]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[21]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[20]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[19]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[18]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[17]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[16]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[15]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[14]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[13]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[12]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[11]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[10]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[9]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[8]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[7]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[6]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[5]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[4]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[3]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[2]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[1]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I11[0]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[31]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[30]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[29]
+WARNING: [Synth 8-3331] design MUX16T1_32 has unconnected port I12[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 362.199 ; gain = 150.789
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.469 ; gain = 145.328
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U5:data1[31] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data1[30] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[31] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[30] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[29] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[28] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[27] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[26] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[25] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[24] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[23] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[22] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[21] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[20] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[19] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[18] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[17] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[16] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[15] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[14] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[13] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[12] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[11] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[10] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[9] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[8] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[7] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[6] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[5] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[4] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[3] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[2] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[1] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U5:data3[0] to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:126]
+WARNING: [Synth 8-3295] tying undriven pin U1:MIO_ready to constant 0 [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:148]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 355.469 ; gain = 145.328
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Counter_x' instantiated as 'U10' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:165]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MIO_BUS' instantiated as 'U4' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:185]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAM_B' instantiated as 'U3' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:226]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ROM_B' instantiated as 'U2' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:234]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SAnti_jitter' instantiated as 'U9' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:53]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SEnter_2_32' instantiated as 'M4' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:87]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SPIO' instantiated as 'U7' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:212]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SSeg7_Dev' instantiated as 'U6' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/top.v:100]
+INFO: [Device 21-403] Loading part xc7k160tlfbv676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp/RAM_B_in_context.xdc] for cell 'U3'
+Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
+Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/.Xil/Vivado-12996-HAO-THUNDER/dcp_2/ROM_B_in_context.xdc] for cell 'U2'
+Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]
+Finished Parsing XDC File [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/constrs_1/new/k7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 677.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tlfbv676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reg_dst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_dst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_src_b" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "mem2reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'reg_dst_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_src_b_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'mem2reg_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_write_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_w_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'o_reg' [C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+	   3 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multi_8CH32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+Module scpu_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+Module regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module ADC32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module MUX16T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module data_path 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top has port buzzer driven by constant 1
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/mem2reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/reg_write_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/alu_src_b_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_16_1/\U1/Data_path/pc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/Controller/mem_w_reg )
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[0]' (FDE) to 'U5/cpu_blink_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[1]' (FDE) to 'U5/cpu_blink_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[2]' (FDE) to 'U5/cpu_blink_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[3]' (FDE) to 'U5/cpu_blink_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[4]' (FDE) to 'U5/cpu_blink_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[5]' (FDE) to 'U5/cpu_blink_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[6]' (FDE) to 'U5/cpu_blink_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/reg_dst_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/alu_src_b_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/mem2reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/branch_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/branch_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/reg_write_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Controller/mem_w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/a0/X0/o_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/r0/register_reg[0][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/Data_path/pc_reg[28]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |SAnti_jitter  |         1|
+|2     |SEnter_2_32   |         1|
+|3     |SSeg7_Dev     |         1|
+|4     |Counter_x     |         1|
+|5     |MIO_BUS       |         1|
+|6     |SPIO          |         1|
+|7     |RAM_B         |         1|
+|8     |ROM_B         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |Counter_x    |     1|
+|2     |MIO_BUS      |     1|
+|3     |RAM_B        |     1|
+|4     |ROM_B        |     1|
+|5     |SAnti_jitter |     1|
+|6     |SEnter_2_32  |     1|
+|7     |SPIO         |     1|
+|8     |SSeg7_Dev    |     1|
+|9     |BUFG         |     3|
+|10    |CARRY4       |    13|
+|11    |LUT1         |     1|
+|12    |LUT2         |    36|
+|13    |LUT3         |    18|
+|14    |LUT4         |    17|
+|15    |LUT5         |    67|
+|16    |LUT6         |   335|
+|17    |MUXF7        |   149|
+|18    |MUXF8        |    68|
+|19    |XORCY        |     1|
+|20    |FDCE         |   992|
+|21    |FDRE         |    75|
+|22    |LD           |     3|
+|23    |IBUF         |    22|
+|24    |OBUF         |    17|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------------+------------+------+
+|      |Instance       |Module      |Cells |
++------+---------------+------------+------+
+|1     |top            |            |  2176|
+|2     |  U1           |SCPU        |  1603|
+|3     |    Controller |scpu_ctrl   |    12|
+|4     |    Data_path  |data_path   |  1591|
+|5     |      a0       |ALU         |     6|
+|6     |        X7     |ADC32       |     1|
+|7     |      r0       |regs        |  1581|
+|8     |  U5           |Multi_8CH32 |    73|
+|9     |  U8           |clk_div     |    98|
++------+---------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 113 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 677.742 ; gain = 106.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 677.742 ; gain = 467.602
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SAnti_jitter.ngc ...
+WARNING:NetListWriters:298 - No output is written to SAnti_jitter.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file SAnti_jitter.edif ...
+ngc2edif: Total memory usage is 89688 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SAnti_jitter.ngc' for (cell view 'SAnti_jitter', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_c0a810b8.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_c0a810b8.edif]
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SEnter_2_32.ngc ...
+WARNING:NetListWriters:298 - No output is written to SEnter_2_32.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Ai[31]_Ai[31]_mux_48_OUT[31 : 2] on
+   block SEnter_2_32 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Bi[31]_Bi[31]_mux_49_OUT[31 : 2] on
+   block SEnter_2_32 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file SEnter_2_32.edif ...
+ngc2edif: Total memory usage is 88160 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/SEnter_2_32.ngc' for (cell view 'SEnter_2_32', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_c0a810b8.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_c0a810b8.edif]
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SSeg7_Dev.ngc ...
+WARNING:NetListWriters:298 - No output is written to SSeg7_Dev.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file SSeg7_Dev.edif ...
+ngc2edif: Total memory usage is 89184 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/SSeg7_Dev.ngc' for (cell view 'SSeg7_Dev', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SSeg7_Dev_ngc_233cfc4b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SSeg7_Dev_ngc_233cfc4b.edif]
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Counter_x.ngc ...
+WARNING:NetListWriters:298 - No output is written to Counter_x.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Counter_x.edif ...
+ngc2edif: Total memory usage is 88160 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/Counter_x.ngc' for (cell view 'Counter_x', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Counter_x_ngc_233cfc4b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Counter_x_ngc_233cfc4b.edif]
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MIO_BUS.ngc ...
+WARNING:NetListWriters:298 - No output is written to MIO_BUS.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MIO_BUS.edif ...
+ngc2edif: Total memory usage is 88032 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/MIO_BUS.ngc' for (cell view 'MIO_BUS', library 'work')
+Parsing EDIF File [./.ngc2edfcache/MIO_BUS_ngc_233cfc4b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/MIO_BUS_ngc_233cfc4b.edif]
+Release 14.7 - ngc2edif P_INT.20160902 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SPIO.ngc ...
+WARNING:NetListWriters:298 - No output is written to SPIO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file SPIO.edif ...
+ngc2edif: Total memory usage is 87776 kilobytes
+
+Reading core file 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/ngc/SPIO.ngc' for (cell view 'SPIO', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SPIO_ngc_233cfc4b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SPIO_ngc_233cfc4b.edif]
+INFO: [Netlist 29-17] Analyzing 961 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20160902
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 738 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 37 instances
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  FD => FDRE: 189 instances
+  FDC => FDCE: 48 instances
+  FDCE_1 => FDCE (inverted pins: C): 15 instances
+  FDE => FDRE: 63 instances
+  FDE_1 => FDRE (inverted pins: C): 14 instances
+  FDPE_1 => FDPE (inverted pins: C): 3 instances
+  FDR => FDRE: 2 instances
+  INV => LUT1: 84 instances
+  LD => LDCE: 3 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 01 18:55:52 2017...
+149 Infos, 277 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 688.527 ; gain = 444.855
+INFO: [Common 17-1381] The checkpoint 'C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 688.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 10:40:29 2017...

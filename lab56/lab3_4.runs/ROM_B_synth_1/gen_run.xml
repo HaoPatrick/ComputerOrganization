@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ROM_B_synth_1" LaunchPart="xc7k160tlfbv676-2L" LaunchTime="1490004936">
-  <File Type="PA-TCL" Name="ROM_B.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ROM_B_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ROM_B.tcl"/>
   <File Type="RDS-RDS" Name="ROM_B.vds"/>
   <File Type="RDS-UTIL" Name="ROM_B_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ROM_B_utilization_synth.pb"/>
