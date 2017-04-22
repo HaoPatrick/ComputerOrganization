@@ -39,11 +39,12 @@ input wire INT
 
 wire zero;
 wire reg_dst;
-wire alu_src_b;
+wire [1:0]alu_src_b;
+wire alu_src_a;
 wire mem2reg;
-wire [2:0]alu_control;
+wire [3:0]alu_control;
 wire jump;
-wire branch;
+wire [1:0]branch;
 wire reg_write;
 
 
@@ -51,31 +52,35 @@ scpu_ctrl Controller(
     .opcode(inst_in[31:26]),
     .func(inst_in[5:0]),
     .MIO_ready(MIO_ready),
+    .zero(zero),
     .reg_dst(reg_dst),
     .alu_src_b(alu_src_b),
     .mem2reg(mem2reg),
     .jump(jump),
-    .branch(branch),
+    .branch(branch[1:0]),
     .reg_write(reg_write),
-    .alu_control(alu_control[2:0]),
+    .alu_control(alu_control[3:0]),
     .mem_w(mem_w),
-    .cpu_mio(CPU_MIO)
+    .cpu_mio(CPU_MIO),
+    .alu_src_a(alu_src_a)
 );
 
 data_path Data_path(
     .clk(clk),
     .rst(reset),
     .data_in(Data_in[31:0]),
+    .alu_src_a(alu_src_a),
     .inst_field(inst_in[25:0]),
     .reg_dst(reg_dst),
     .alu_src_b(alu_src_b),
     .mem2reg(mem2reg),
     .jump(jump),
-    .branch(branch),
+    .branch(branch[1:0]),
     .reg_write(reg_write),
-    .alu_control(alu_control[2:0]),
+    .alu_control(alu_control[3:0]),
     .pc_out(PC_out),
     .addr_out(Addr_out),
-    .data_out(Data_out)
+    .data_out(Data_out),
+    .zero(zero)
 );
 endmodule

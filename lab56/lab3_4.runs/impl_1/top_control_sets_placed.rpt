@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Sat Apr 22 09:17:10 2017
+| Date         : Sat Apr 22 10:47:32 2017
 | Host         : HAO-THUNDER running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    16 |
-| Unused register locations in slices containing registers |    57 |
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    60 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             263 |          144 |
-| No           | No                    | Yes                    |              14 |            7 |
+| No           | No                    | No                     |             300 |          163 |
+| No           | No                    | Yes                    |              14 |           10 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              54 |           33 |
-| Yes          | No                    | Yes                    |               7 |            2 |
+| Yes          | No                    | No                     |              54 |           30 |
+| Yes          | No                    | Yes                    |               7 |            4 |
 | Yes          | Yes                   | No                     |              29 |            9 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -48,38 +48,39 @@ Table of Contents
 +--------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
 |                Clock Signal                |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +--------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
-|  U1/Controller/branch_reg_i_2_n_17         |                                        |                                  |                1 |              1 |
-|  n_16_0_BUFG                               |                                        |                                  |                2 |              2 |
-| ~n_16_0_BUFG                               | U4/GPIOf0000000_we                     | U9/rst                           |                1 |              3 |
-| ~U1/Controller/alu_control_reg[2]_i_4_n_17 |                                        |                                  |                3 |              3 |
-|  n_16_0_BUFG                               |                                        | U9/rst                           |                1 |              4 |
-|  n_16_0_BUFG                               | U7/P2S_led/_n0075_inv                  | U9/rst                           |                1 |              4 |
+| ~U1/Controller/alu_src_b_reg[1]_i_2_n_18   |                                        |                                  |                1 |              2 |
+|  U1/Controller/branch_reg[1]_i_2_n_18      |                                        |                                  |                1 |              2 |
+|  n_16_7_BUFG                               |                                        |                                  |                2 |              2 |
+| ~n_16_7_BUFG                               | U4/GPIOf0000000_we                     | U9/rst                           |                2 |              3 |
+| ~U1/Controller/alu_control_reg[3]_i_3_n_18 |                                        |                                  |                1 |              4 |
+|  n_16_7_BUFG                               |                                        | U9/rst                           |                4 |              4 |
+|  n_16_7_BUFG                               | U7/P2S_led/_n0075_inv                  | U9/rst                           |                2 |              4 |
 |  U9/clk1_BUFG                              |                                        |                                  |                3 |              5 |
-|  U9/clk1_BUFG                              | U9/_n0225_inv1_cepot                   |                                  |                5 |              6 |
-|  clk_100mhz_IBUF_BUFG                      | U9/_n0243_inv1_cepot_cepot             |                                  |                4 |              7 |
+|  U9/clk1_BUFG                              | U9/_n0225_inv1_cepot                   |                                  |                4 |              6 |
+|  clk_100mhz_IBUF_BUFG                      | U9/_n0243_inv1_cepot_cepot             |                                  |                2 |              7 |
 |  clk_100mhz_IBUF_BUFG                      | U9/counter1[31]_GND_1_o_LessThan_102_o | U9/RSTN_temp_sw_temp[15]_OR_54_o |                3 |              8 |
 |  clk_100mhz_IBUF_BUFG                      |                                        | U9/rst                           |                6 |             10 |
-|  n_16_0_BUFG                               | U7/P2S_led/_n0103_inv                  |                                  |                4 |             16 |
+|  n_16_7_BUFG                               | U7/P2S_led/_n0103_inv                  |                                  |                4 |             16 |
 |  U9/clk1_BUFG                              | U9/counter[31]_GND_1_o_LessThan_5_o    | U9/btn_temp[3]_scan_AND_1_o      |                6 |             21 |
-|  n_16_0_BUFG                               | U4/GPIOe0000000_we                     |                                  |               20 |             25 |
-|  Clk_CPU_BUFG                              |                                        |                                  |               37 |             92 |
-|  clk_100mhz_IBUF_BUFG                      |                                        |                                  |               98 |            160 |
+|  n_16_7_BUFG                               | U4/GPIOe0000000_we                     |                                  |               20 |             25 |
+|  n_17_319_BUFG                             |                                        |                                  |               24 |             32 |
+|  Clk_CPU_BUFG                              |                                        |                                  |               34 |             93 |
+|  clk_100mhz_IBUF_BUFG                      |                                        |                                  |               97 |            160 |
 +--------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     1 |
-| 2      |                     1 |
-| 3      |                     2 |
-| 4      |                     2 |
+| 2      |                     3 |
+| 3      |                     1 |
+| 4      |                     3 |
 | 5      |                     1 |
 | 6      |                     1 |
 | 7      |                     1 |
 | 8      |                     1 |
 | 10     |                     1 |
-| 16+    |                     5 |
+| 16+    |                     6 |
 +--------+-----------------------+
 
 

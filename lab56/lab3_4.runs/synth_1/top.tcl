@@ -24,19 +24,19 @@ add_files -quiet c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/la
 set_property used_in_implementation false [get_files c:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/ip/ROM_B/ROM_B.dcp]
 read_verilog -library xil_defaultlib {
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/xor32.v
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/SignalExt_32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/or32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/nor32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/and32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/addc_32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_32.v
-  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Element/srl32.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/sign_ext.v
-  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/regs.v
-  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v
-  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/ALU.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/scpu_ctrl.v
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/new/data_path.v
+  C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/OExp02-7SEG/MUX8T1_8.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SSeg7_Dev_IO.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/imports/Port/SPIO_IO.v
   C:/Users/haoxi/Documents/Coding/verilog/ComputerOrganization/lab56/lab3_4.srcs/sources_1/new/SCPU.v

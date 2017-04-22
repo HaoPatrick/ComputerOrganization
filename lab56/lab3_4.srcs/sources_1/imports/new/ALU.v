@@ -21,7 +21,7 @@
 
 
 module ALU(
-input [2:0]ALU_operation,
+input [3:0]ALU_operation,
 input signed [31:0]A,
 input signed [31:0]B,
 output [31:0]res,
